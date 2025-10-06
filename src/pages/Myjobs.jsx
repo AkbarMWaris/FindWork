@@ -11,18 +11,18 @@ const Myjobs = () => {
   }
 
   return (
-    <div className="px-25">
-      <h1 className='gradient-title font-extrabold pb-8 text-6xl sm:text-7xl text-center '>
+    <div className="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 py-6 sm:py-8 md:py-10">
+      <h1 className='gradient-title font-extrabold pb-4 sm:pb-6 md:pb-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center'>
             {user?.unsafeMetadata?.role === "candidate"
             ? "My Applications"
             : "My Jobs"}
       </h1>
 
-                  {user?.unsafeMetadata?.role === "candidate" ? (
-                      <CreatedApplications />
-                  ) : (
-                      <CreatedJobs />
-                  )}
+      {user?.unsafeMetadata?.role === "candidate" ? (
+          <CreatedApplications />
+      ) : (
+          <CreatedJobs />
+      )}
     </div>
   )
 }
