@@ -18,7 +18,7 @@
 
 ## 📋 Table of Contents
 
-- [About The Project](#about-the-project)
+- [About The Project](#-about-the-project)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
