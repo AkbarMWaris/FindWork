@@ -19,13 +19,13 @@
 ## 📋 Table of Contents
 
 - [About The Project](#-about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Environment Variables](#environment-variables)
-- [Deployment](#deployment)
+- [Deployment](#-deployment)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
