@@ -55,7 +55,7 @@ function LandingPage() {
         {/* CTA Buttons - Column on mobile, Row on larger screens */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center px-4">
            <Link to="/job-list">
-            <Button variant="blue" size="xl">
+            <Button variant="destructive" size="xl">
               Find Jobs <UserSearch />
             </Button>
           </Link>
