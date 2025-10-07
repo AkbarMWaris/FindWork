@@ -138,6 +138,10 @@ git clone https://github.com/AkbarMWaris/FindWork.git
 
 3. **Set up environment variables** (see [Environment Variables](#environment-variables) section)
 
+    🔐 Environment Variables
+
+    Create a `.env` file in the root directory and add the following variables:
+
 4. **Run the development server**
 
      Clerk Authentication
