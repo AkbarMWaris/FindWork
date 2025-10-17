@@ -18,8 +18,11 @@ import {
 } from "@/components/ui/accordion";
 import SplitText from "@/components/SplitText";
 import { UserSearch, Briefcase } from 'lucide-react';
+import { useUser } from "@clerk/clerk-react";
 
 function LandingPage() {
+
+  const {user} = useUser();
   return (
     <>
       <main className="flex flex-col gap-6 sm:gap-10 md:gap-16 lg:gap-20 py-6 px-4 sm:py-10 sm:px-8 md:py-16 md:px-12 lg:py-20 lg:px-16">
@@ -54,16 +57,22 @@ function LandingPage() {
 
         {/* CTA Buttons - Column on mobile, Row on larger screens */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center px-4">
+           {/* {user?.unsafeMetadata?.role !== "recruiter" && (
+            
+           )} */}
            <Link to="/job-list">
             <Button variant="blue" size="xl">
               Find Jobs <UserSearch />
             </Button>
           </Link>
-          <Link to="/post-job">
-            <Button  className={'bg-red-400 text-white hover:bg-red-500'} size="xl">
-              Post a Job <Briefcase />
-            </Button>
-          </Link>
+
+         {user?.unsafeMetadata?.role !== "candidate" && (
+  <Link to="/post-job">
+    <Button className={'bg-red-400 text-white hover:bg-red-500'} size="xl">
+      Post a Job <Briefcase />
+    </Button>
+  </Link>
+)}
         </div>
 
         {/* Carousel */}

@@ -65,11 +65,22 @@ function Header() {
                             }}
                         >
                             <UserButton.MenuItems>
+                                {user?.unsafeMetadata?.role === "recruiter" && (
                                 <UserButton.Link
-                                    label='My Jobs'
-                                    labelIcon={<BriefcaseBusinessIcon size={15} />}
-                                    href='/my-jobs'
+                                label='My Jobs'
+                                
+                                labelIcon={<BriefcaseBusinessIcon size={15} />}
+                                href='/my-jobs'
                                 />
+                            )}
+                                {user?.unsafeMetadata?.role === "candidate" && (
+                                <UserButton.Link
+                                label='My Application'
+                                
+                                labelIcon={<BriefcaseBusinessIcon size={15} />}
+                                href='/my-jobs'
+                                />
+                            )}
                                 <UserButton.Link
                                     label='Saved Jobs'
                                     labelIcon={<Heart size={15} />}
